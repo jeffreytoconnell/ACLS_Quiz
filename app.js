@@ -4,8 +4,8 @@ $(document).ready(function () {
 
 var questions = [{
 		title: "What is the max dose of Amiodarone?",
-		choices: ["300", "150", "600", "450"],
-		correctAnswer: "450",
+		choices: ["300mg", "150mg", "600mg", "450mg"],
+		correctAnswer: "450mg",
 	},
 	{
 		title: "What is the initial dose of Adenosine?",
@@ -70,7 +70,7 @@ function startQuiz() {
 		}
 		// WRONG ANSWER
 		else {
-			console.log('Wrong!');
+			console.log('Wrong');
 		}
 		// ASK NEXT QUESTION
 		askNextQuestion();
@@ -85,6 +85,7 @@ function startQuiz() {
 		}
 		// NO QUESTIONS LEFT
 		else {
+			updateScore();
 			var confirmation = confirm('You got ' + total_points + ' correct. Want to try again?');
 			if (confirmation) {
 				counter = 0;
