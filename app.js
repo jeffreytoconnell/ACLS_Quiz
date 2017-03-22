@@ -34,6 +34,7 @@ function startQuiz() {
 		total_points = 0,
 		number_of_questions = questions.length,
 		current_question;
+		updateScore();
 
 	function updateScore() {
 		$(".total_points").text(total_points);
@@ -85,7 +86,6 @@ function startQuiz() {
 		}
 		// NO QUESTIONS LEFT
 		else {
-			updateScore();
 			var confirmation = confirm('You got ' + total_points + ' correct. Want to try again?');
 			if (confirmation) {
 				counter = 0;

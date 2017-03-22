@@ -1,5 +1,5 @@
 body {
-	background-color:white;
+	background-color: white;
 }
 
 h1 {
@@ -16,26 +16,12 @@ div {
 }
 
 h2 {
-	/*font-family: helvetica;
-	clear: both;
-	padding: 10px;
-	color: firebrick;
-	border: 3px solid firebrick;
-	margin: auto;
-	background: white;
-	border-radius: 15px;
-	margin-top: 20px;
-	text-align: center;
-	vertical-align: middle;
-	font-weight: bold;
-	font-size: 30px;
-	width: 60%;*/
-	 border: 1px solid #000;
-	 font-family: 'Lato', sans-serif;
-    display: block;
-    margin: 10px 0;
-    padding: 5px;
-	cursor:pointer;
+	border: 1px solid #000;
+	font-family: 'Lato', sans-serif;
+	display: block;
+	margin: 10px 0;
+	padding: 5px;
+	
 	border-radius: 10px;
 }
 
@@ -45,9 +31,8 @@ ul {
 	color: black;
 	list-style: circle;
 	margin: 30px 0px;
-	
 }
-ul:hover {
- cursor: pointer;
 
+ul:hover {
+	cursor: pointer;
 }
