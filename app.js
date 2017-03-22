@@ -50,7 +50,7 @@ function startQuiz() {
 
 	// 1. SHOW FIRST QUESTION
 	presentQuestion(questions[counter]);
-	updateScore();
+
 
 	// 2. PLAYER CHOOSES ANSWER
 	$("ul").on("click", "li", chooseAnswer);
