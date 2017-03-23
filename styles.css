@@ -19,7 +19,7 @@ h2 {
 	border: 1px solid #000;
 	font-family: 'Lato', sans-serif;
 	display: block;
-	margin: 10px 0;
+	margin: 10px 10px;
 	padding: 5px;
 	
 	border-radius: 10px;
@@ -30,9 +30,12 @@ ul {
 	font-size: 24px;
 	color: black;
 	list-style: circle;
-	margin: 30px 0px;
+	margin: 30px 10px;
 }
 
 ul:hover {
 	cursor: pointer;
+}
+ul li:hover {
+	color:red;
 }

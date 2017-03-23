@@ -86,13 +86,18 @@ function startQuiz() {
 		}
 		// NO QUESTIONS LEFT
 		else {
-			var confirmation = confirm('You got ' + total_points + ' correct. Want to try again?');
-			if (confirmation) {
-				counter = 0;
+			updateScore();
+			$("ul").hide();
+			$(".final_results").html('You got ' + total_points + ' correct. Want to try again? <br> <button>Restart</button>')
+			$("button").click(function(){
+			counter = 0;
 				total_points = 0;
-				updateScore();
-				presentQuestion(questions[counter]);
-			}
+				$('ul').show();
+				$(".final_results").html("");
+			updateScore();
+			presentQuestion(questions[counter]);
+			})
+
 		}
 	}
 };
